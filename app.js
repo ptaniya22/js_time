@@ -1,55 +1,3 @@
-// Условие
-
-// 2 == 2 - не строгое сравнение,сравнивает оба значения между собой
-// 2 === 2 - строгое сравнение,сравнивает оба значения и тип между собой
-
-// if(1 === '1') {
-//     console.log('Good');
-// }else {
-//     console.log('bad');
-// }
-
-// var a =  +prompt('Введите свою оценку');
-
-// if(a === 5) {
-//     console.log('Покупаем iphone');
-// }else if(a === 4) {
-//     console.log('Покупаем airpods');
-// }else if(a === 3) {
-//     console.log('Живи');
-// }else {
-//     console.log('The end');
-// }
-
-// || - оператор или
-// && - оператор и
-
-// var word = prompt('Введите слово для входа');
-
-// if(word == 'admin' || word == 'админ' || word == 'zafar') {
-//     console.log('Доступ открыт');
-// }else {
-//     console.log('Доступ закрыт');
-// }
-
-//  ! - оператор не - ставиться перед значением или функцией - возвращает противоположное значение
-
-// isNaN() - функция проверяет на NaN если внутри NaN то отдаст true иначе false
-
-// var one = prompt('Введите первое число')
-// var two = prompt('Введите второе число')
-
-// if(one > two && !isNaN(one) && !isNaN(two) ) {
-//     console.log(one + ' больше чем ' + two);
-// }else if(two > one) {
-//     console.log(two + ' больше чем ' + one);
-// }else if(one == two) {
-//     console.log(one + ' равен ' + two);
-// }else {
-//     console.log('Вы ввели не число');
-// }
-
-// var day = +prompt('Введите день недели');
 let tempString = 0;
 let timeHour = document.querySelector('.time-hour-text');
 let timeMinute = document.querySelector('.time-minute-text');
@@ -59,12 +7,6 @@ let hour = +prompt('введите час');
 timeHour.textContent = hour;
 console.log(hour);
 
-// if (isNaN(hour)) {
-//   console.log('incorrect input');
-//   timeHour.textContent = 'Error';
-//   timeInform.textContent = 'Error';
-//   alert('Error');
-// } else {
 switch (hour) {
   case 0:
     timeHour.textContent = '0';
